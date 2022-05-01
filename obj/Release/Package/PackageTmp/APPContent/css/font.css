@@ -1,0 +1,14 @@
+@font-face {
+ font-family:"font";
+ src: url("fonts/font-regular.eot");
+ src: local("☺"),  url("fonts/fonts/font-regular.woff") format("woff"),  url("fonts/fonts/font-regular.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family:"font";
+ src: url("fonts/font-bold.eot");
+ src: local("☺"),  url("fonts/fonts/font-bold.woff") format("woff"),  url("fonts/fonts/font-bold.ttf") format("truetype");
+ font-weight: bold;
+ font-style: normal;
+}

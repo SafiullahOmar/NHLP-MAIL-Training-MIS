@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OuterSiteMaster2.master.cs" Inherits="TMIS.OuterSiteMaster2" %>
+
+<!DOCTYPE html>
+
+<html lang="en" data-textdirection="LTR" class="loading">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Robust admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" href="APPContent/css/vendors.min.css" />
+    <!-- BEGIN VENDOR CSS-->
+    <!-- BEGIN Font icons-->
+    <link rel="stylesheet" type="text/css" href="APPContent/fonts/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="APPContent/fonts/flag-icon-css/css/flag-icon.min.css">
+    <!-- END Font icons-->
+    <!-- BEGIN Plugins CSS-->
+    <link rel="stylesheet" type="text/css" href="APPContent/css/plugins/sliders/slick/slick.css">
+    <!-- END Plugins CSS-->
+
+    <!-- BEGIN Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="APPContent/css/plugins/ui/prism.min.css">
+    <!-- END Vendor CSS-->
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" href="APPContent/css/app.min.css" />
+    <link href="APPContent/Custom.css" rel="stylesheet" />
+    <!-- END ROBUST CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <!-- END Page Level CSS-->
+
+</head>
+<body data-open="click" data-menu="vertical-compact-menu" data-col="2-columns" class="vertical-layout vertical-compact-menu 4-columns  container boxed-layout fixed-navbar">
+    <form id="Form1" runat="server">
+        <!-- START PRELOADER-->
+
+        <div id="preloader-wrapper">
+            <div id="loader">
+                <div class="chasing-dots loader-black">
+                    <div class="child dot1"></div>
+                    <div class="child dot2"></div>
+                </div>
+            </div>
+            <div class="loader-section section-top bg-amber"></div>
+            <div class="loader-section section-bottom bg-amber"></div>
+        </div>
+
+        <!-- END PRELOADER-->
+
+        <!-- navbar-fixed-top-->
+        <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-dark navbar-brand-center navbar-shadow navbar-border container boxed-layout">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
+                        <li class="nav-item"><a href="index-2.html" class="navbar-brand nav-link">
+                            <img data-expand="APPContent/images/logo/robust-logo-light.png" data-collapse="APPContent/images/logo/robust-logo-small.png" class="brand-logo">NHLP :: Training Information System</a></li>
+                        <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content container-fluid">
+                    <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item hidden-sm-down"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5"></i></a></li>
+                            <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon icon-expand2"></i></a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav float-xs-right">
+
+                            <li class="dropdown dropdown-language nav-item"><a id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                                <div aria-labelledby="dropdown-flag" class="dropdown-menu"><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-us"></i>English</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-af"></i> Pashtu</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-af"></i> Dari</a></div>
+                            </li>
+                            <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-bell4"></i><span class="tag tag-pill tag-default tag-danger tag-default tag-up noty"></span></a>
+
+                            </li>
+                            <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online">
+                                <img src="APPContent/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span><span class="user-name"><asp:LoginName ID="LoginName1" runat="server" />
+                                </span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="ChangePassword.aspx" class="dropdown-item"><i class="icon-head"></i>Change Password</a><a href="#" class="dropdown-item"><i class="icon-mail6"></i>Home Page</a><a href="#" class="dropdown-item"><i class="icon-clipboard2"></i>Lock Page</a>
+                                    <div class="dropdown-divider"></div>
+                                    <asp:LoginStatus CssClass="dropdown-item" LogoutPageUrl="~/login.aspx" LogoutAction="RedirectToLoginPage" ID="LoginStatus1" runat="server" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="fullscreen-search-overlay"></div>
+
+        <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+        <!-- main menu-->
+        <div class="main-menu menu-light menu-fixed menu-shadow menu-border menu-accordion">
+            <!-- main menu content-->
+            <div class="main-menu-content">
+                <!-- main menu header-->
+                <!-- / main menu header-->
+                <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+                    <li class=" nav-item"><a href="#"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span></a>
+                        <ul class="menu-content">
+                            <li><a href="Dashboard.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Summary</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-cog"></i><span data-i18n="nav.templates.main" class="menu-title">Setup</span></a>
+                        <ul class="menu-content">
+                            <li><a href="../Admin/ComponentSetup.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Component</a></li>
+                            <li><a href="../Admin/SubComponentSetup.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Sub Component</a></li>
+                            <li><a href="../Admin/OrganizationSetup.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Organization</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-address-book"></i><span data-i18n="nav.templates.main" class="menu-title">Training</span></a>
+                        <ul class="menu-content">
+                            <li><a href="Forms/TrainingInformation.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Training Information</a></li>
+                            <li><a href="Forms/TrainingParticipants.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Training Participant</a></li>
+                            <li><a href="Forms/TrainingDocuments.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Upload Training Documents</a></li>
+                            <li><a href="Forms/TrainingAttendance.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Participant Attendance</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-video-camera"></i><span data-i18n="nav.templates.main" class="menu-title">Field Visit</span></a>
+                        <ul class="menu-content">
+                            <li><a href="../Forms/FieldVisit.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Visit Information</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-monitor3"></i><span data-i18n="nav.dash.main" class="menu-title">System Report</span></a>
+
+                        <ul class="menu-content">
+                            <li><a href="Reports/frmReport.aspx" data-i18n="nav.templates.vert.main" class="menu-item">System Excel Reports</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-setting1"></i><span data-i18n="nav.dash.main" class="menu-title">User Management</span></a>
+
+                        <ul class="menu-content">
+                            <li><a href="Admin/CreateUser.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Create User</a></li>
+                            <li><a href="Admin/RoleManager.aspx" data-i18n="nav.templates.vert.main" class="menu-item">Manage User Role</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="icon-support"></i><span data-i18n="nav.dash.main" class="menu-title">System Support</span></a>
+
+                        <ul class="menu-content">
+                            <li><a href="pages/COFID.aspx" data-i18n="nav.templates.vert.main" class="menu-item">User Manual</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /main menu content-->
+            <!-- main menu footer-->
+            <!-- include includes/menu-footer-->
+            <!-- main menu footer-->
+        </div>
+        <!-- / main menu-->
+
+        <div class="robust-content content container-fluid">
+            <div class="content-wrapper">
+                <div class="content-header row">
+
+                    <div class="content-header-left col-md-6 col-xs-12">
+                        <h2 class="content-header-title mb-0">
+                            <asp:ContentPlaceHolder ID="pageTopic" runat="server"></asp:ContentPlaceHolder>
+                        </h2>
+                    </div>
+
+                    <div class="content-header-lead col-xs-12 mt-2">
+                        <p class="lead">
+                            <asp:ContentPlaceHolder ID="pageTopicDetail" runat="server"></asp:ContentPlaceHolder>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <!-- Description -->
+
+                    <asp:ContentPlaceHolder ID="pageHeader" runat="server"></asp:ContentPlaceHolder>
+
+                    <asp:ContentPlaceHolder ID="pageBody" runat="server"></asp:ContentPlaceHolder>
+
+                    <!--/ Description -->
+
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+        <footer class="footer footer-dark">
+            <p class="clearfix text-muted text-sm-center mb-0 px-2"><span class="float-md-left d-xs-block d-md-inline-block">Copyright  &copy; 2018 , All rights reserved. </span><span class="float-md-right d-xs-block d-md-inline-block">NHLP - MIS &nbsp <i class="icon-database blue"></i></span></p>
+        </footer>
+
+        <!-- BEGIN VENDOR JS-->
+        <script src="APPContent/js/vendors.min.js"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <!--<script type="text/javascript" src="robust-assets/js/plugins/ui/prism.min.js"></script>-->
+        <!-- END PAGE VENDOR JS-->
+        <!-- BEGIN ROBUST JS-->
+        <script src="APPContent/js/app.min.js"></script>
+        <!-- END ROBUST JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <!-- END PAGE LEVEL JS-->
+        <script src="APPContent/js/plugins/extensions/jquery.knob.min.js" type="text/javascript"></script>
+        <script src="HChart/highcharts.js"></script>
+        <script src="HChart/drilldown.js"></script>
+        <script src="HChart/highcharts-3d.js"></script>
+        <script src="HChart/exporting.js"></script>
+        <script src="HChart/offline-exporting.js"></script>
+        <script src="HChart/no-data-to-display.js"></script>
+        <script src="APPContent/js/NumberFormat.js"></script>
+        <script src="Script/shared.js"></script>
+        <asp:ContentPlaceHolder runat="server" ID="scripts"></asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
